@@ -26,18 +26,6 @@ function App() {
 
   return (
     <div className="App">
-      <div className='uye-listeleme'>
-        {
-          takimUyeleri.map((item) => {
-            <div className='uye-liste-item'>
-              <span className='uye-id'>{item.key}</span>
-              <span className='uye-ad-soyad'>{item.isim}</span>
-              <span className='uye-mail'>{item.mail}</span>
-              <span className='uye-rol'>{item.rol}</span>
-            </div>
-          })
-        }
-      </div>
       <Form kaydetFonksiyonu={UyeKaydet} />
     </div>
   );
